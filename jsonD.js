@@ -1,4 +1,15 @@
-[
+// const employee =  {
+//         "name": "John",
+//         "age": 30,
+//         "city": "New York",
+//         der: function(){
+//             console.log("I am sahil")
+//         }
+// }
+
+// employee.der();
+
+const arr =[
     {
         "tag": "Organization_Location",
         "patterns": [
@@ -16,6 +27,29 @@
         ],
         "responses": [
             "Bourntec has a presence in 5 regions, each with its office. To help you better, please specify the location you're interested in India(Hyderabad, Kerala, Odisha), North America, Middle East and I can provide you with the corresponding office address and a link to its location."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "North_America_Location",
+        "patterns": [
+            "North America",
+            "Where are Bourntec's office in North America?",
+            "Where is your office in North America?",
+            "Where is Bourntec's North America office located?",
+            "What's the address of Bourntec's North America office?",
+            "What's the address of your organization?",
+            "Can you tell me where Bourntec's North America is?",
+            "I need to know the location of Bourntec's North America corporate office.",
+            "Where can I find Bourntec's North America campus?",
+            "I'd like to know the exact location of Bourntec's office in North America.",
+            "I'd like to know the exact location of organization in North America.",
+            "What's the street address of Bourntec's North American corporate office?",
+            "Please share the location details for Bourntec's North America office.",
+            "Where in North America can I find Bourntec's main office?"
+        ],
+        "responses": [
+            "Bourntec's North America office is situated at 1701 East Woodfield Road, Suite 200, Schaumburg, IL 60173. Here is the link to <a target='_blank' href='https://maps.app.goo.gl/42KTDfAzW9WQbknh8'>view the location on Google Maps</a>."
         ],
         "context_set": ""
     },
@@ -102,51 +136,12 @@
             "Bourntec's India office is situated at 5 locations. 1.Sundarpada, Bhubaneswar, Odisha, India. -> <a target='_blank' href='https://maps.app.goo.gl/yNC2AsDwzSfrgmfD8'>view the location on Google Maps</a>.<br>2.OCAC Building,Acharya Vihar,Bhubaneswar, Odisha, India -> <a target='_blank' href='https://maps.app.goo.gl/9S2SHxF7faHupn928'>view the location on Google Maps</a>.<br> 3.Hitech City, Madhapur, Hyderabad, India. -> <a target='_blank' href='https://maps.app.goo.gl/42KTDfAzW9WQbknh8'>view the location on Google Maps</a>.<br>4.Kakkanad, Kochi, Kerala, India. -> <a target='_blank' href='https://maps.app.goo.gl/LmDxVkfZ8viGojcs6'>view the location on Google Maps</a>.<br>5.ourntec Solutions Pvt Ltd,Noel Focus, 4th Floor(4B, 4C, 4D),Chittethukara,CSEZ P.O, Kochi, Kerala,  India. -> <a target='_blank' href='https://maps.app.goo.gl/84S3vvCAEvFBZRCZA'>view the location on Google Maps</a>.<br>"
         ],
         "context_set": ""
-    },
-    {
-        "tag": "North_America_Location",
-        "patterns": [
-            "North America",
-            "Where are Bourntec's office in North America?",
-            "Where is your office in North America?",
-            "Where is Bourntec's North America office located?",
-            "What's the address of Bourntec's North America office?",
-            "What's the address of your organization?",
-            "Can you tell me where Bourntec's North America is?",
-            "I need to know the location of Bourntec's North America corporate office.",
-            "Where can I find Bourntec's North America campus?",
-            "I'd like to know the exact location of Bourntec's office in North America.",
-            "I'd like to know the exact location of organization in North America.",
-            "What's the street address of Bourntec's North American corporate office?",
-            "Please share the location details for Bourntec's North America office.",
-            "Where in North America can I find Bourntec's main office?"
-        ],
-        "responses": [
-            "Bourntec's North America office is situated at 1701 East Woodfield Road, Suite 200, Schaumburg, IL 60173. Here is the link to <a target='_blank' href='https://maps.app.goo.gl/42KTDfAzW9WQbknh8'>view the location on Google Maps</a>."
-        ],
-        "context_set": ""
-    },
-    {
-        "tag": "Middle_East_Location",
-        "patterns": [
-            "Middle East",
-            "Where are Bourntec's office in Middle East?",
-            "Where is your office in Middle East?",
-            "Where is Bourntec's Middle East office located?",
-            "What's the address of Bourntec's Middle East office?",
-            "What's the address of your organization?",
-            "Can you tell me where Bourntec's Middle East is?",
-            "I need to know the location of Bourntec's Middle East corporate office.",
-            "Where can I find Bourntec's Middle East campus?",
-            "I'd like to know the exact location of Bourntec's office in Middle East.",
-            "I'd like to know the exact location of organization in Middle East.",
-            "What's the street address of Bourntec's Middle Eastn corporate office?",
-            "Please share the location details for Bourntec's Middle East office.",
-            "Where in Middle East can I find Bourntec's main office?"
-        ],
-        "responses": [
-            "Bourntec's Middle East office is situated at Concord Tower, 6th Floor, Dubai Media City, P.O.Box 119245, Dubai, UAE. Here is the link to <a target='_blank' href='https://maps.app.goo.gl/LH4z7rThQWKnWjDK8'>view the location on Google Maps</a>."
-        ],
-        "context_set": ""
     }
 ]
+
+console.log(arr[1].tag);
+
+
+
+
+
